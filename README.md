@@ -14,4 +14,4 @@ You have designed an API that aggregates data from all over the web and displays
 - Currency amounts
 
 Here is the image of the output
--[Image of output](./Screenshot%202025-02-14%20084425.png)
+![Image of output](./Screenshot%202025-02-14%20084425.png)
