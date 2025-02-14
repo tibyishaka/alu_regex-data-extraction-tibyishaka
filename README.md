@@ -12,6 +12,6 @@ You have designed an API that aggregates data from all over the web and displays
 - HTML tags
 - Hashtags
 - Currency amounts
-
-Here is the image of the output
+## The Solution
+By using Regex in Python I was able to write the code that will be used  to extract the needed info from  a text file  and the needed info is this in the image below 
 ![Image of output](./Screenshot%202025-02-14%20084425.png)
