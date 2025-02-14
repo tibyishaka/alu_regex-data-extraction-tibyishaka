@@ -1,10 +1,10 @@
 import re
-
+# function to rad the file
 def load_sample_text(filename):
     with open(filename, 'r') as file:
         return file.read()
     
-#Regex function to filter needed elements
+#Regex functions for (email,URLs,phone numbers, credit card numbers, html tags,hashtags,currency,time in 24hrs)
 # 1. Extracting Email Addresses
 def extract_Emails(Emails):
     Emails_pattern = r'\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\b'
@@ -50,23 +50,23 @@ def main():
     # Load the sample text from the file
     sample_text = load_sample_text('sample_text.txt')
 
-    # Extract and print different types of data
+    # prints the outcome
 
     print()
     print("Extracted Emails:", extract_Emails(sample_text))
-    print()
+    print('************************************************************')
     print("Extracted URLs:", extract_urls(sample_text))
-    print()
+    print('************************************************************')
     print("Extracted Phone Numbers:", extract_phone_numbers(sample_text))
-    print()
+    print('************************************************************')
     print("Extracted Credit Card Numbers:", extract_credit_cards(sample_text))
-    print()
+    print('************************************************************')
     print("Extracted HTML Tags:", extract_html_tags(sample_text))
-    print()
+    print('************************************************************')
     print("Extracted Hashtags:", extract_hashtags(sample_text))
-    print()
+    print('************************************************************')
     print("Extracted Currency Amounts:", extract_currency_amounts(sample_text))
-    print()
+    print('************************************************************')
     print("Extracted Times:", extract_times(sample_text))
   
 
